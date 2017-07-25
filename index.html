@@ -1,0 +1,48 @@
+<!doctype html>
+<html itemscope="" itemtype="http://schema.org/WebPage" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="There is no barrier to prevent you from knowledge">
+    <meta name="author" content="Lambda">
+    <title>P2P Wikipedia</title>
+    <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/p2pwiki.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.9/css/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="contrainer">
+        <h2 class="form-config-heading">Setting for IPFS and Ethereum RPC</h2>
+        <form class="form-group">
+            <label for="ethURL">Ethereum Host:</label>
+            <input type="text" class="form-control" id="ethURL">
+        </form>
+        <form class="form-group">
+            <label for="ethPort">Ethereum Port:</label>
+            <input type="text" class="form-control" id="ethPort">
+        </form>
+        <form class="form-group">
+            <label for="IPFSURL">IPFS Host:</label>
+            <input type="text" class="form-control" id="IPFSURL">
+        </form>
+        <form class="form-group">
+            <label for="IPFSWebPort">IPFS Web Port:</label>
+            <input type="text" class="form-control" id="IPFSWebPort">
+        </form>
+        <form class="form-group">
+            <label for="IPFSWebPort">IPFS API Port:</label>
+            <input type="text" class="form-control" id="IPFSAPIPort">
+        </form>
+        <button class="form-group btn btn-lg btn-primary btn-block" id="start-btn">Start</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/js/web3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.9/js/bootstrap-dialog.min.js"></script>
+    <script src="static/js/ipfs.js"></script>
+    <script src="static/js/p2pwiki.js"></script>
+</body>
+</html>
