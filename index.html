@@ -36,7 +36,36 @@
             <label for="IPFSWebPort">IPFS API Port:</label>
             <input type="text" class="form-control" id="IPFSAPIPort">
         </form>
-        <button class="form-group btn btn-lg btn-primary btn-block" id="start-btn">Start</button>
+        <button class="form-group btn btn-lg btn-primary btn-block" id="start-btn" data-toggle="modal" data-target="#myModal">Start</button>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Status</h4>
+                </div>
+                <div class="modal-body" id="modal-body">
+
+                </div>
+                <div class="form-group">
+                    <label for="sel1">Select language for wikipedia:</label>
+                    <select class="form-control" id="sel1">
+                        <option>scn</option>
+                        <option>en</option>
+                        <option>zh</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" disabled="disabled" id="go2wiki">Go!</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="static/bootstrap/js/bootstrap.min.js"></script>
