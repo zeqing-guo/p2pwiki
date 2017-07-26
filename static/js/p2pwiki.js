@@ -110,6 +110,6 @@ function go() {
     }];
     var contractAddress = "0x6724ab8b53b1c0acedbb3cf2ada02bee13b0d94d";
     var contract = web3.eth.contract(abi).at(contractAddress);
-    var webHash = contract.getHash('scn');
+    var webHash = contract.getHash(document.getElementById('sel1').value);
     window.location.replace('http://' + ipfsHost + ':' + ipfsWebPort + '/ipfs/' + webHash);
 }
